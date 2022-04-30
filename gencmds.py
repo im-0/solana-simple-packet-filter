@@ -39,7 +39,7 @@ def _base58_dec(str58):
 def main():
     if len(sys.argv) != 3:
         print('Usage:', file=sys.stderr)
-        print(f'    {sys.argv[0]} <list of pubkeys> <comma-separated list of UDP ports>', file=sys.stderr)
+        print(f'    {sys.argv[0]} <file with public keys> <comma-separated list of UDP ports>', file=sys.stderr)
         exit(1)
     _, pubkeys_fname, udp_ports = sys.argv
 
